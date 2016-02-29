@@ -1,11 +1,11 @@
-Team X's MineSweeper
+Team Q's MineSweeper
 ===
 
-This is the repository for Team X's MineSweeper.  Team members and contact information follow below.
+This is the repository for Team Q's MineSweeper.  Team members and contact information follow below.
 
 Name|Role|Email|Phone
 ---|---|---|---
-Fred Flintstone|Architect|fred@bedrockconstruction.com|415-555-0023
+Terry Guan|Architect|terryguan2009@gmail.com|415-871-4839
 
 ---
 AP Computer Science<br>
