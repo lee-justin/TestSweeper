@@ -6,6 +6,7 @@ This is the repository for Team Q's MineSweeper.  Team members and contact infor
 Name|Role|Email|Phone
 ---|---|---|---
 Terry Guan|Architect|terryguan2009@gmail.com|415-871-4839
+David Trinh|Developer|davidjtrinh@gmail.com|415-726-8238
 
 ---
 AP Computer Science<br>
