@@ -1,8 +1,33 @@
 package edu.balboa.apcs.MineSweeper;
 
+<<<<<<< HEAD:src/edu/balboa/apcs/MineSweeper/minefield.java
 import java.util.ArrayList;
 
 public class MineField {
+=======
+public class minefieldTest {
+
+	private int size = 8;
+
+	public String toString() {
+		String p = "";
+		for (int columns = 0; columns <= size* 2; columns++) {
+			if (columns % 2 == 0) {
+				for (int rows = 0; rows <= size - 1; rows++) {
+					p += "+---";
+				}
+				p += "+";
+			} else {
+				for (int rows = 0; rows <= size - 1; rows++) {
+					p += "|   ";
+					// add this later
+					// p += "| ";
+				}
+				p += "|";
+			}
+			p+= "\n";
+		}
+>>>>>>> fae8562ea62782cff1f9bc5178754e225db148ca:src/edu/balboa/apcs/MineSweeper/minefieldTest.java
 
 	private char[][] field;
 	
