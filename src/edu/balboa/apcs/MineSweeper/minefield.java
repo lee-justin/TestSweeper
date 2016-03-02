@@ -1,34 +1,72 @@
 package edu.balboa.apcs.MineSweeper;
 
-public class minefield {
+import java.util.ArrayList;
 
-	private int size = 8;
+public class MineField {
 
-	public String toString() {
-		String p = "";
-		for (int columns = 0; columns <= size* 2; columns++) {
-			if (columns % 2 == 0) {
-				for (int rows = 0; rows <= size - 1; rows++) {
-					p += "+---";
-				}
-				p += "+";
-			} else {
-				for (int rows = 0; rows <= size - 1; rows++) {
-					p += "|   ";
-					// add this later
-					// p += "| ";
-				}
-				p += "|";
+	private char[][] field;
+	
+	//Alphabets on top
+	String Alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	
+	//Specify the size of board
+	public MineField(int k) {
+		field = new char[k][k];
+		initializeBoard(k);
+		printField(k);
+	}
+
+
+	public void initializeBoard(int k) {
+		// Loop through rows
+		for (int i = 0; i < k; i++) {
+			// Loop through columns
+
+			for (int j = 0; j < k; j++) {
+				field[i][j] = '-';
 			}
-			p+= "\n";
+		}
+	}
+
+	public void printField(int k) {
+
+		// print letters
+		System.out.print(" ");
+		for (int g = 0; g < k; g++) {
+			
+			System.out.print("   " + Alphabet.charAt(g));
+
 		}
 
-		return p;
-	}
+		System.out.println("");
+		
 
-	public static void main(String[] args) {
-		minefield mf = new minefield();
-		System.out.println(mf);
-	}
+		System.out.print("  ");
+		for (int h = 0; h < k; h++) {
+			System.out.print("+---");
+		}
+		System.out.print("+");
+		System.out.println("");
 
+		for (int i = 0; i < k; i++) {
+			System.out.printf("%2s", i + 1);
+			System.out.print("| ");
+			
+			for (int j = 0; j < k; j++) {
+				
+				System.out.print(field[i][j] + " | ");
+
+			}
+
+			System.out.println();
+			
+			System.out.print("  ");
+			for (int f = 0; f < k; f++) {
+				System.out.print("+---");
+			}
+			System.out.println("+");
+
+		}
+
+	}
 }

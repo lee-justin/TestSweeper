@@ -8,11 +8,15 @@ package edu.balboa.apcs.MineSweeper;
  * @author mferraro
  */
 public class SampleSquare {
+	
+
 
 	private boolean minePresent;
 
 	public SampleSquare() {
 		minePresent = false; //default square has no mine
+		System.out.print("+");
+		
 	}
 	
 	public boolean hasMine() {
@@ -21,6 +25,12 @@ public class SampleSquare {
 	
 	public void plantMine() {
 		minePresent = false; //INTENTIONALLY BROKEN!
+	}
+	
+	public String toString() {
+		
+		return "+";
+		
 	}
 
 }
