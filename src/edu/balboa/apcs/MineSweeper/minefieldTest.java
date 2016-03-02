@@ -1,6 +1,6 @@
 package edu.balboa.apcs.MineSweeper;
 
-public class minefield {
+public class minefieldTest {
 
 	private int size = 8;
 
