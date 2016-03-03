@@ -2,32 +2,25 @@ package edu.balboa.apcs.MineSweeper;
 
 public class Square {
 	
-	private boolean minePresent;
-	private boolean flagPresent;
-	
+	private boolean isMined;
+	private boolean isFlagged;
+	private boolean isRevealed;
+	private int mines;
 	
 	public Square() {
-		minePresent = false;
+		isMined = false;
+		isFlagged = false;
+		isRevealed = false;
 		System.out.print("+");
 	}
 	
 	public boolean hasMine() {
-		return minePresent;
+		return isMined;
 	}
 	
-	public boolean plantMind() {
-		minePresent = true;
-		return minePresent;
-	}
-	
-	public boolean hasFlag() {
-		flagPresent = true;
-		return flagPresent;
-	}
-	
-	public boolean unFlag() {
-		flagPresent = false;
-		return flagPresent;
+	public boolean plantMine() {
+		isMined = true;
+		return isMined;
 	}
 	
 	
