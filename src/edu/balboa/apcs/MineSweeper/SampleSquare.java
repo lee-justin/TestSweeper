@@ -9,13 +9,11 @@ package edu.balboa.apcs.MineSweeper;
  */
 public class SampleSquare {
 	
-
-
 	private boolean minePresent;
 
 	public SampleSquare() {
 		minePresent = false; //default square has no mine
-		System.out.print("o");
+		//System.out.print("o");
 		
 	}
 	

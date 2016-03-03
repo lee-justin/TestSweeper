@@ -3,16 +3,17 @@ package edu.balboa.apcs.MineSweeper;
 import java.util.ArrayList;
 
 public class MineField {
-
-	private char[][] field;
-	private final double PERCENT_OF_MINES= 0.16;
 	
-	//Alphabets on top
+	private final double PERCENT_OF_MINES= 0.16;
 	private String Alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	private SampleSquare[][] field;
+	//private SampleSquare[][] test;
+
+	
 	
 	//Specify the size of board
 	public MineField(int k) {
-		field = new char[k][k];
+		field = new SampleSquare[k][k];
 		initializeBoard(k);
 		printField(k);
 	}
@@ -24,7 +25,7 @@ public class MineField {
 			// Loop through columns
 
 			for (int j = 0; j < k; j++) {
-				field[i][j] = '-';
+				field[i][j] = new SampleSquare() ;
 			}
 		}
 	}

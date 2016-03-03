@@ -23,6 +23,11 @@ public class Square {
 		return isMined;
 	}
 	
+	public String toString() {
+		
+		return "+";
+		
+	}
 	
 }
 
