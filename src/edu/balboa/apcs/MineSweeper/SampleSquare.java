@@ -15,7 +15,7 @@ public class SampleSquare {
 
 	public SampleSquare() {
 		minePresent = false; //default square has no mine
-		System.out.print("+");
+		System.out.print("o");
 		
 	}
 	
