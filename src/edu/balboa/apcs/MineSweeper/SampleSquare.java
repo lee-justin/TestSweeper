@@ -10,6 +10,7 @@ package edu.balboa.apcs.MineSweeper;
 public class SampleSquare {
 	
 	private boolean minePresent;
+	private boolean isFlipped=false;
 
 	public SampleSquare() {
 		minePresent = false; //default square has no mine
@@ -17,18 +18,40 @@ public class SampleSquare {
 		
 	}
 	
+	
 	public boolean hasMine() {
 		return minePresent;
 	}
 	
 	public void plantMine() {
-		minePresent = false; //INTENTIONALLY BROKEN!
+		minePresent = true; //INTENTIONALLY BROKEN!
+	}
+	
+	public boolean getFlipped() {
+		return isFlipped;
+	}
+	
+	public void setFlipped(boolean a) {
+		isFlipped= a;
 	}
 	
 	public String toString() {
 		
-		return "+";
+		if (isFlipped == false) 
+			return "0";
+		
+		else {
+			
+			return "x";
+			
+		}
 		
 	}
+	
+//	public String toString(int j) {
+//		
+//			return "X";
+//
+//	}	
 
 }

@@ -25,7 +25,6 @@ public class ControlPanel {
 
 			if (difficultyInput == 1) {
 				System.out.println("Level: Easy\n");
-				System.out.println("You chose level easy");
 				difficulty = EASY;
 			}
 			else if (difficultyInput == 2) {

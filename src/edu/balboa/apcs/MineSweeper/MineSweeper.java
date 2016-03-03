@@ -15,12 +15,25 @@ public class MineSweeper {
 		ControlPanel1.setDifficulty();
 
 		MineField MineField1 = new MineField(ControlPanel1.getDifficulty());
-
+		
+		//MineField1.playgame //playGame will be have all the game logic?
+		
+		//Create method for each state of game?
+		
+		//if lose/win/quit, then .endGame, ask if they want to .restartGame?
+		//point system
+		
+		//MineField1.locationPicker("kill",'E', 4);
+		//MineField1.printField(8);
+		//MineField1.refresh();
+		
 	}
 
 	public static void main(String[] args) {
 
 		MineSweeper game1 = new MineSweeper();
+		
+		
 
 		// uncomment if your team decides to use the provided
 		// console-like UI class instead of running MineSweeper
