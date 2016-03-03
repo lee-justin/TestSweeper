@@ -5,26 +5,34 @@ import java.util.Scanner;
 public class ControlPanel {
 
 	private static int difficulty = 0;
-	int firstInt;
+	private int difficultyInput;
+	private final int EASY=8;
+	private final int MEDIUM=12;
+	private final int HARD=15;
+	
 
-	public void diff() {
+	// Mutator for difficulty
+	public void setDifficulty() {
+
+		System.out.println("Welcome to APCS MineSweeper.\n");
+		System.out.println("Choose your difficulty press '1' for easy");
+		System.out.println("Choose your difficulty press '2' for medium");
+		System.out.println("Choose your difficulty press '3' for difficult\n");
 
 		while (difficulty == 0) {
-			Scanner sc = new Scanner(System.in);
-			firstInt = new Integer(sc.nextLine());
+			Scanner scanner1 = new Scanner(System.in);
+			difficultyInput = new Integer(scanner1.nextLine());
 
-			if (firstInt == 1) {
+			if (difficultyInput == 1) {
 				System.out.println("You chose level easy");
-				difficulty = 8;
-				
+				difficulty = EASY;
 			}
-
-			else if (firstInt == 2) {
+			else if (difficultyInput == 2) {
 				System.out.println("You chose level medium");
-				difficulty = 12;
-			} else if (firstInt == 3) {
+				difficulty = MEDIUM;
+			} else if (difficultyInput == 3) {
 				System.out.println("You chose level hard");
-				difficulty = 15;
+				difficulty = HARD;
 
 			} else {
 				System.out.println("Invalid Choice, try again");
@@ -33,8 +41,9 @@ public class ControlPanel {
 		}
 
 	}
-	
-	public int getDiff() {
+
+	// Accessor for difficulty
+	public int getDifficulty() {
 		return difficulty;
 	}
 

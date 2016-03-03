@@ -7,27 +7,21 @@ package edu.balboa.apcs.MineSweeper;
  */
 
 public class MineSweeper {
-	
+
+	public MineSweeper() {
+
+		ControlPanel ControlPanel1 = new ControlPanel();
+
+		ControlPanel1.setDifficulty();
+
+		MineField MineField1 = new MineField(ControlPanel1.getDifficulty());
+
+	}
 
 	public static void main(String[] args) {
-		System.out.println("Welcome to APCS MineSweeper.");
-		System.out.println("");
-		System.out.println("Choose your difficulty press '1' for easy");
-		System.out.println("Choose your difficulty press '2' for medium");
-		System.out.println("Choose your difficulty press '3' for difficult");
-		System.out.println("");
-		
-		ControlPanel ControlPanel1 = new ControlPanel();
-		
-		ControlPanel1.diff();
-		
-		MineField MineField1 = new MineField(ControlPanel1.getDiff());
 
-		
-		
-		
+		MineSweeper game1 = new MineSweeper();
 
-				
 		// uncomment if your team decides to use the provided
 		// console-like UI class instead of running MineSweeper
 		// at the command line (in a terminal shell):
