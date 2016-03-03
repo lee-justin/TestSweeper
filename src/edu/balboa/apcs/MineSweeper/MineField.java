@@ -16,7 +16,7 @@ public class MineField {
 		initializeBoard(k);
 		printField(k);
 		locationPicker("flag",'E', 4);
-		//printField(k);
+		printField(k);
 	}
 
 	public void initializeBoard(int k) {
@@ -115,7 +115,7 @@ public class MineField {
 			// **************field[0][0] = field[0][0];********
 
 			System.out.println("testing    \""+ field[0][0] + "\"   **********\n");
-			printField(8);
+			//printField(8);
 			System.out.println();
 
 		}
