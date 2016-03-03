@@ -6,10 +6,9 @@ public class ControlPanel {
 
 	private static int difficulty = 0;
 	private int difficultyInput;
-	private final int EASY=8;
-	private final int MEDIUM=12;
-	private final int HARD=15;
-	
+	private final int EASY = 8;
+	private final int MEDIUM = 12;
+	private final int HARD = 15;
 
 	// Mutator for difficulty
 	public void setDifficulty() {
@@ -26,8 +25,8 @@ public class ControlPanel {
 			if (difficultyInput == 1) {
 				System.out.println("Level: Easy\n");
 				difficulty = EASY;
-			}
-			else if (difficultyInput == 2) {
+
+			} else if (difficultyInput == 2) {
 				System.out.println("Level: Medium\n");
 				difficulty = MEDIUM;
 			} else if (difficultyInput == 3) {

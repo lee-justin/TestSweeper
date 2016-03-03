@@ -26,6 +26,8 @@ public class MineSweeper {
 		//MineField1.locationPicker("kill",'E', 4);
 		//MineField1.printField(8);
 		//MineField1.refresh();
+		//MineField1.locationPicker("flag",'E', 4);
+		
 		
 	}
 

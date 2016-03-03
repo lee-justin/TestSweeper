@@ -15,7 +15,7 @@ public class MineField {
 		field = new SampleSquare[k][k];
 		initializeBoard(k);
 		printField(k);
-		locationPicker("flag",'E', 4);
+		locationPicker("flag",'E', 4); //tmp
 		printField(k);
 	}
 
@@ -105,7 +105,11 @@ public class MineField {
 			// System.out.print("*************");
 			//
 			// location[row][col] = 4;
-			//
+			
+			
+			// \U
+			
+			
 			// return location;
 			// }
 			// return location;
