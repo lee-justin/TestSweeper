@@ -16,10 +16,12 @@ public class MineSweeper {
 		System.out.println("Choose your difficulty press '2' for medium");
 		System.out.println("Choose your difficulty press '3' for difficult");
 		System.out.println("");
+		
 		ControlPanel ControlPanel1 = new ControlPanel();
 		
 		ControlPanel1.diff();
 		
+		MineField MineField1 = new MineField(ControlPanel1.getDiff());
 
 		
 		

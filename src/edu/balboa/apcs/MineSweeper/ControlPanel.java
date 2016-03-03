@@ -16,6 +16,7 @@ public class ControlPanel {
 			if (firstInt == 1) {
 				System.out.println("You chose level easy");
 				difficulty = 8;
+				
 			}
 
 			else if (firstInt == 2) {
@@ -26,11 +27,15 @@ public class ControlPanel {
 				difficulty = 15;
 
 			} else {
-				System.out.println("Invalid Choice");
+				System.out.println("Invalid Choice, try again");
 
 			}
 		}
 
+	}
+	
+	public int getDiff() {
+		return difficulty;
 	}
 
 }
