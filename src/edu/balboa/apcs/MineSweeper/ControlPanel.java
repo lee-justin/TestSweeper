@@ -24,14 +24,15 @@ public class ControlPanel {
 			difficultyInput = new Integer(scanner1.nextLine());
 
 			if (difficultyInput == 1) {
+				System.out.println("Level: Easy\n");
 				System.out.println("You chose level easy");
 				difficulty = EASY;
 			}
 			else if (difficultyInput == 2) {
-				System.out.println("You chose level medium");
+				System.out.println("Level: Medium\n");
 				difficulty = MEDIUM;
 			} else if (difficultyInput == 3) {
-				System.out.println("You chose level hard");
+				System.out.println("Level: Hard\n");
 				difficulty = HARD;
 
 			} else {

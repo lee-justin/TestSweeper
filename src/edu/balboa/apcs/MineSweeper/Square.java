@@ -5,7 +5,7 @@ public class Square {
 	private boolean isMined;
 	private boolean isFlagged;
 	private boolean isRevealed;
-	private int mines;
+	private int mines; 
 	
 	public Square() {
 		isMined = false;

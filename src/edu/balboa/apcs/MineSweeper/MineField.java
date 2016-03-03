@@ -5,9 +5,10 @@ import java.util.ArrayList;
 public class MineField {
 
 	private char[][] field;
+	private final double PERCENT_OF_MINES= 0.16;
 	
 	//Alphabets on top
-	String Alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	private String Alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	
 	//Specify the size of board
 	public MineField(int k) {
